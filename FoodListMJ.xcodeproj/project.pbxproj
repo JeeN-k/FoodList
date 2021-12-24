@@ -9,21 +9,38 @@
 /* Begin PBXBuildFile section */
 		1FC546252774E70700B6C537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546242774E70700B6C537 /* AppDelegate.swift */; };
 		1FC546272774E70700B6C537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546262774E70700B6C537 /* SceneDelegate.swift */; };
-		1FC546292774E70700B6C537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546282774E70700B6C537 /* ViewController.swift */; };
 		1FC5462C2774E70700B6C537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC5462A2774E70700B6C537 /* Main.storyboard */; };
 		1FC5462E2774E70900B6C537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC5462D2774E70900B6C537 /* Assets.xcassets */; };
 		1FC546312774E70900B6C537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC5462F2774E70900B6C537 /* LaunchScreen.storyboard */; };
+		1FC5463F2774E7F500B6C537 /* FoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546382774E7F500B6C537 /* FoodPresenter.swift */; };
+		1FC546402774E7F500B6C537 /* FoodWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546392774E7F500B6C537 /* FoodWorker.swift */; };
+		1FC546412774E7F500B6C537 /* FoodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5463A2774E7F500B6C537 /* FoodRouter.swift */; };
+		1FC546422774E7F500B6C537 /* FoodModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5463B2774E7F500B6C537 /* FoodModels.swift */; };
+		1FC546432774E7F500B6C537 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5463C2774E7F500B6C537 /* FoodViewController.swift */; };
+		1FC546442774E7F500B6C537 /* FoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5463D2774E7F500B6C537 /* FoodInteractor.swift */; };
+		1FC546482774E91800B6C537 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546472774E91800B6C537 /* FoodCell.swift */; };
+		1FC5464A2774EEA500B6C537 /* FoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546492774EEA500B6C537 /* FoodResponse.swift */; };
+		1FC5465D2774F96B00B6C537 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FC5465C2774F96A00B6C537 /* GoogleService-Info.plist */; };
+		1FC546642775000A00B6C537 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC546632775000A00B6C537 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FC546212774E70700B6C537 /* FoodListMJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodListMJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC546242774E70700B6C537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC546262774E70700B6C537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FC546282774E70700B6C537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FC5462B2774E70700B6C537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FC5462D2774E70900B6C537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FC546302774E70900B6C537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FC546322774E70900B6C537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC546382774E7F500B6C537 /* FoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPresenter.swift; sourceTree = "<group>"; };
+		1FC546392774E7F500B6C537 /* FoodWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWorker.swift; sourceTree = "<group>"; };
+		1FC5463A2774E7F500B6C537 /* FoodRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRouter.swift; sourceTree = "<group>"; };
+		1FC5463B2774E7F500B6C537 /* FoodModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModels.swift; sourceTree = "<group>"; };
+		1FC5463C2774E7F500B6C537 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		1FC5463D2774E7F500B6C537 /* FoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInteractor.swift; sourceTree = "<group>"; };
+		1FC546472774E91800B6C537 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		1FC546492774EEA500B6C537 /* FoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResponse.swift; sourceTree = "<group>"; };
+		1FC5465C2774F96A00B6C537 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC546642775000A00B6C537 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				1FC546232774E70700B6C537 /* FoodListMJ */,
 				1FC546222774E70700B6C537 /* Products */,
+				1FC5465E2774FFBC00B6C537 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +77,36 @@
 			children = (
 				1FC546242774E70700B6C537 /* AppDelegate.swift */,
 				1FC546262774E70700B6C537 /* SceneDelegate.swift */,
-				1FC546282774E70700B6C537 /* ViewController.swift */,
 				1FC5462A2774E70700B6C537 /* Main.storyboard */,
+				1FC546462774E80D00B6C537 /* FoodList */,
+				1FC546492774EEA500B6C537 /* FoodResponse.swift */,
 				1FC5462D2774E70900B6C537 /* Assets.xcassets */,
 				1FC5462F2774E70900B6C537 /* LaunchScreen.storyboard */,
 				1FC546322774E70900B6C537 /* Info.plist */,
+				1FC5465C2774F96A00B6C537 /* GoogleService-Info.plist */,
 			);
 			path = FoodListMJ;
+			sourceTree = "<group>";
+		};
+		1FC546462774E80D00B6C537 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				1FC5463C2774E7F500B6C537 /* FoodViewController.swift */,
+				1FC546472774E91800B6C537 /* FoodCell.swift */,
+				1FC546382774E7F500B6C537 /* FoodPresenter.swift */,
+				1FC546392774E7F500B6C537 /* FoodWorker.swift */,
+				1FC5463A2774E7F500B6C537 /* FoodRouter.swift */,
+				1FC5463B2774E7F500B6C537 /* FoodModels.swift */,
+				1FC5463D2774E7F500B6C537 /* FoodInteractor.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		1FC5465E2774FFBC00B6C537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +125,9 @@
 			dependencies = (
 			);
 			name = FoodListMJ;
+			packageProductDependencies = (
+				1FC546632775000A00B6C537 /* FirebaseDatabase */,
+			);
 			productName = FoodListMJ;
 			productReference = 1FC546212774E70700B6C537 /* FoodListMJ.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 1FC546182774E70700B6C537;
+			packageReferences = (
+				1FC5464B2774F86F00B6C537 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1FC546222774E70700B6C537 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FC546312774E70900B6C537 /* LaunchScreen.storyboard in Resources */,
+				1FC5465D2774F96B00B6C537 /* GoogleService-Info.plist in Resources */,
 				1FC5462E2774E70900B6C537 /* Assets.xcassets in Resources */,
 				1FC5462C2774E70700B6C537 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FC546292774E70700B6C537 /* ViewController.swift in Sources */,
 				1FC546252774E70700B6C537 /* AppDelegate.swift in Sources */,
+				1FC546432774E7F500B6C537 /* FoodViewController.swift in Sources */,
+				1FC546442774E7F500B6C537 /* FoodInteractor.swift in Sources */,
+				1FC546402774E7F500B6C537 /* FoodWorker.swift in Sources */,
+				1FC5463F2774E7F500B6C537 /* FoodPresenter.swift in Sources */,
+				1FC546412774E7F500B6C537 /* FoodRouter.swift in Sources */,
 				1FC546272774E70700B6C537 /* SceneDelegate.swift in Sources */,
+				1FC546482774E91800B6C537 /* FoodCell.swift in Sources */,
+				1FC5464A2774EEA500B6C537 /* FoodResponse.swift in Sources */,
+				1FC546422774E7F500B6C537 /* FoodModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +416,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FC5464B2774F86F00B6C537 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FC546632775000A00B6C537 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FC5464B2774F86F00B6C537 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FC546192774E70700B6C537 /* Project object */;
 }
