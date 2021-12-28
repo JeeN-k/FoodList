@@ -22,6 +22,13 @@
 		1FC5464A2774EEA500B6C537 /* FoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546492774EEA500B6C537 /* FoodResponse.swift */; };
 		1FC5465D2774F96B00B6C537 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FC5465C2774F96A00B6C537 /* GoogleService-Info.plist */; };
 		1FC546642775000A00B6C537 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1FC546632775000A00B6C537 /* FirebaseDatabase */; };
+		1FC5466D2776519400B6C537 /* NewMealPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546672776519400B6C537 /* NewMealPresenter.swift */; };
+		1FC5466E2776519400B6C537 /* NewMealWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546682776519400B6C537 /* NewMealWorker.swift */; };
+		1FC5466F2776519400B6C537 /* NewMealRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC546692776519400B6C537 /* NewMealRouter.swift */; };
+		1FC546702776519400B6C537 /* NewMealModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5466A2776519400B6C537 /* NewMealModels.swift */; };
+		1FC546712776519400B6C537 /* NewMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5466B2776519400B6C537 /* NewMealViewController.swift */; };
+		1FC546722776519400B6C537 /* NewMealInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC5466C2776519400B6C537 /* NewMealInteractor.swift */; };
+		1FC54681277B700700B6C537 /* FieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC54680277B700700B6C537 /* FieldsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,13 @@
 		1FC546472774E91800B6C537 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		1FC546492774EEA500B6C537 /* FoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResponse.swift; sourceTree = "<group>"; };
 		1FC5465C2774F96A00B6C537 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1FC546672776519400B6C537 /* NewMealPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealPresenter.swift; sourceTree = "<group>"; };
+		1FC546682776519400B6C537 /* NewMealWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealWorker.swift; sourceTree = "<group>"; };
+		1FC546692776519400B6C537 /* NewMealRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealRouter.swift; sourceTree = "<group>"; };
+		1FC5466A2776519400B6C537 /* NewMealModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealModels.swift; sourceTree = "<group>"; };
+		1FC5466B2776519400B6C537 /* NewMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
+		1FC5466C2776519400B6C537 /* NewMealInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMealInteractor.swift; sourceTree = "<group>"; };
+		1FC54680277B700700B6C537 /* FieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,13 +105,8 @@
 		1FC546462774E80D00B6C537 /* FoodList */ = {
 			isa = PBXGroup;
 			children = (
-				1FC5463C2774E7F500B6C537 /* FoodViewController.swift */,
-				1FC546472774E91800B6C537 /* FoodCell.swift */,
-				1FC546382774E7F500B6C537 /* FoodPresenter.swift */,
-				1FC546392774E7F500B6C537 /* FoodWorker.swift */,
-				1FC5463A2774E7F500B6C537 /* FoodRouter.swift */,
-				1FC5463B2774E7F500B6C537 /* FoodModels.swift */,
-				1FC5463D2774E7F500B6C537 /* FoodInteractor.swift */,
+				1FC546662776507600B6C537 /* Add Meal */,
+				1FC546652776505E00B6C537 /* List */,
 			);
 			path = FoodList;
 			sourceTree = "<group>";
@@ -107,6 +116,34 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FC546652776505E00B6C537 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1FC5463C2774E7F500B6C537 /* FoodViewController.swift */,
+				1FC546472774E91800B6C537 /* FoodCell.swift */,
+				1FC546382774E7F500B6C537 /* FoodPresenter.swift */,
+				1FC546392774E7F500B6C537 /* FoodWorker.swift */,
+				1FC5463A2774E7F500B6C537 /* FoodRouter.swift */,
+				1FC5463B2774E7F500B6C537 /* FoodModels.swift */,
+				1FC5463D2774E7F500B6C537 /* FoodInteractor.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1FC546662776507600B6C537 /* Add Meal */ = {
+			isa = PBXGroup;
+			children = (
+				1FC5466B2776519400B6C537 /* NewMealViewController.swift */,
+				1FC54680277B700700B6C537 /* FieldsView.swift */,
+				1FC546672776519400B6C537 /* NewMealPresenter.swift */,
+				1FC546682776519400B6C537 /* NewMealWorker.swift */,
+				1FC546692776519400B6C537 /* NewMealRouter.swift */,
+				1FC5466A2776519400B6C537 /* NewMealModels.swift */,
+				1FC5466C2776519400B6C537 /* NewMealInteractor.swift */,
+			);
+			path = "Add Meal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +229,18 @@
 				1FC546442774E7F500B6C537 /* FoodInteractor.swift in Sources */,
 				1FC546402774E7F500B6C537 /* FoodWorker.swift in Sources */,
 				1FC5463F2774E7F500B6C537 /* FoodPresenter.swift in Sources */,
+				1FC54681277B700700B6C537 /* FieldsView.swift in Sources */,
+				1FC5466E2776519400B6C537 /* NewMealWorker.swift in Sources */,
+				1FC546722776519400B6C537 /* NewMealInteractor.swift in Sources */,
 				1FC546412774E7F500B6C537 /* FoodRouter.swift in Sources */,
 				1FC546272774E70700B6C537 /* SceneDelegate.swift in Sources */,
+				1FC5466F2776519400B6C537 /* NewMealRouter.swift in Sources */,
+				1FC546712776519400B6C537 /* NewMealViewController.swift in Sources */,
+				1FC546702776519400B6C537 /* NewMealModels.swift in Sources */,
 				1FC546482774E91800B6C537 /* FoodCell.swift in Sources */,
 				1FC5464A2774EEA500B6C537 /* FoodResponse.swift in Sources */,
 				1FC546422774E7F500B6C537 /* FoodModels.swift in Sources */,
+				1FC5466D2776519400B6C537 /* NewMealPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

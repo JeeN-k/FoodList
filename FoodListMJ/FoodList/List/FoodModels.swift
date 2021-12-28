@@ -23,14 +23,14 @@ enum Food {
 
     enum SelectMeal {
         struct Request {
-            var mealItem: Meals
+            var mealItem: MealsResponse
             var isBought: Bool
         }
     }
     
     enum DeleteMeal {
         struct Request {
-            var mealItem: Meals
+            var mealItem: MealsResponse
         }
     }
   

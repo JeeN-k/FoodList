@@ -11,8 +11,8 @@ import Firebase
 
 protocol FoodWorkingLogic {
     func getFood(completion: @escaping ([MealItem]) -> ())
-    func selectFood(mealItem: Meals, isBought: Bool)
-    func deleteFood(mealItem: Meals)
+    func selectFood(mealItem: MealsResponse, isBought: Bool)
+    func deleteFood(mealItem: MealsResponse)
 }
 
 class FoodService: FoodWorkingLogic {
@@ -26,23 +26,22 @@ class FoodService: FoodWorkingLogic {
         }
     }
     
-    func selectFood(mealItem: Meals, isBought: Bool) {
+    func selectFood(mealItem: MealsResponse, isBought: Bool) {
         var childUpdates = [String: Any]()
         if mealItem.type == .food {
             childUpdates = ["/food/\(mealItem.key)/Ch": isBought]
         } else {
-            childUpdates = ["/wather/\(mealItem.key)/Ch": isBought]
+            childUpdates = ["/water/\(mealItem.key)/Ch": isBought]
         }
         ref.updateChildValues(childUpdates)
     }
     
-    func deleteFood(mealItem: Meals) {
+    func deleteFood(mealItem: MealsResponse) {
         var delRef = ref
         if mealItem.type == .food {
             delRef = delRef.child("/food/\(mealItem.key)")
         } else {
-            delRef = delRef.child("/wather/\(mealItem.key)")
-            print(delRef)
+            delRef = delRef.child("/water/\(mealItem.key)")
         }
         delRef.removeValue()
     }
@@ -54,7 +53,7 @@ class FoodService: FoodWorkingLogic {
             meals.append(meal)
         }
         
-        let drinkSnapshot = snapshot.childSnapshot(forPath: "wather")
+        let drinkSnapshot = snapshot.childSnapshot(forPath: "water")
         for item in drinkSnapshot.children {
             let meal = WaterItem(snapshot: item as! DataSnapshot)
             meals.append(meal)

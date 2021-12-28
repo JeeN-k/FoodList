@@ -9,17 +9,17 @@ import Foundation
 import Firebase
 
 protocol MealItem {
-    var mealItem: Meals { get }
+    var mealItem: MealsResponse { get }
     var ref: DatabaseReference? { get }
 }
 
 struct FoodItem: MealItem {
-    var mealItem: Meals
+    var mealItem: MealsResponse
     var ref: DatabaseReference?
     
     init(snapshot: DataSnapshot) {
         let snapshotValue = snapshot.value as! [String: AnyObject]
-        mealItem = Meals(name: snapshotValue["Name"] as! String,
+        mealItem = MealsResponse(name: snapshotValue["Name"] as! String,
                          count: snapshotValue["Price"] as! String,
                          price: snapshotValue["Count"] as! String,
                          isBought: snapshotValue["Ch"] as! Bool,
@@ -30,12 +30,12 @@ struct FoodItem: MealItem {
 }
 
 struct WaterItem: MealItem {
-    var mealItem: Meals
+    var mealItem: MealsResponse
     var ref: DatabaseReference?
     
     init(snapshot: DataSnapshot) {
         let snapshotValue = snapshot.value as! [String: AnyObject]
-        mealItem = Meals(name: snapshotValue["Name"] as! String,
+        mealItem = MealsResponse(name: snapshotValue["Name"] as! String,
                          count: snapshotValue["Price"] as! String,
                          price: snapshotValue["Count"] as! String,
                          isBought: snapshotValue["Ch"] as! Bool,
@@ -46,23 +46,30 @@ struct WaterItem: MealItem {
     }
 }
 
-struct Meals {
+struct MealsResponse {
     var name: String
     var count: String
     var price: String
     var isBought: Bool
     var key: String
-    var type: FoodType
+    var type: MealType
+}
+
+struct MealSend {
+    var name: String
+    var count: String
+    var price: String
+    var type: MealType
 }
 
 struct MealViewModel {
     struct Cell: MealCellViewModel {
-        var mealItem: Meals
+        var mealItem: MealsResponse
     }
     var cells: [Cell]
 }
 
-enum FoodType: String, CaseIterable {
+enum MealType: String, CaseIterable {
     case food = "Еда"
-    case water = "Вода"
+    case water = "Напитки"
 }

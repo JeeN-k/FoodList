@@ -19,10 +19,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jHs-7t-xo9"/>
+                    <connections>
+                        <segue destination="1OV-Ec-qaM" kind="presentation" identifier="segue" id="px7-vX-OSl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="92.410714285714278"/>
+            <point key="canvasLocation" x="1067" y="92"/>
+        </scene>
+        <!--New Meal View Controller-->
+        <scene sceneID="7Qb-2T-riD">
+            <objects>
+                <viewController id="1OV-Ec-qaM" customClass="NewMealViewController" customModule="FoodListMJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZU-92-tIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Vao-05-MCZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZDZ-gs-2rK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucb-pu-vrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4j1-UL-FYE">
